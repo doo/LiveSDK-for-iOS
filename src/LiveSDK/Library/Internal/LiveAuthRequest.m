@@ -112,7 +112,7 @@ currentViewController:(UIViewController *)currentViewController
         // Adding a checking logic and wait for the modal dialog to appear before we can dismiss it.
         if (self.authViewController.canDismiss) 
         {
-            [self.currentViewController dismissModalViewControllerAnimated:YES];
+            [self.currentViewController dismissViewControllerAnimated:YES completion:nil];
             self.currentViewController = nil;  
             self.authViewController = nil;
         }
@@ -166,8 +166,7 @@ currentViewController:(UIViewController *)currentViewController
     UINavigationController *modalDialog = [[[UINavigationController alloc]initWithRootViewController:self.authViewController]
                                           autorelease];
     
-    [self.currentViewController presentModalViewController:modalDialog 
-                                                  animated:YES];
+    [self.currentViewController presentViewController:modalDialog animated:YES completion:nil];
 }
 
 - (void)retrieveToken
