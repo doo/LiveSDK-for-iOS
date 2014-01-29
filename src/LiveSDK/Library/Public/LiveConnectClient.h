@@ -236,14 +236,14 @@
 //           found in the userState property of the LiveOperation instance that will be passed as a parameter 
 //           when a LiveOperationDelegate protocol method is invoked.
 
-- (LiveOperation *) copyFromPath:(NSString *)path
-                   toDestination:(NSString *)destination
-                        delegate:(id <LiveOperationDelegate>)delegate;
+- (LiveOperation *) fileCopyFromPath:(NSString *)path
+                       toDestination:(NSString *)destination
+                            delegate:(id <LiveOperationDelegate>)delegate;
 
-- (LiveOperation *) copyFromPath:(NSString *)path
-                   toDestination:(NSString *)destination
-                        delegate:(id <LiveOperationDelegate>)delegate
-                       userState:(id)userState;
+- (LiveOperation *) fileCopyFromPath:(NSString *)path
+                       toDestination:(NSString *)destination
+                            delegate:(id <LiveOperationDelegate>)delegate
+                           userState:(id)userState;
 
 #pragma mark - download* methods
 

@@ -26,7 +26,7 @@
 
 + (BOOL) isFilePath: (NSString *)path;
 
-+ (void) parseApiResponse:(NSData *)data
++ (BOOL) parseApiResponse:(NSData *)data
              textResponse:(NSString **)textResponse
                  response:(NSDictionary **)response
                     error:(NSError **)error;

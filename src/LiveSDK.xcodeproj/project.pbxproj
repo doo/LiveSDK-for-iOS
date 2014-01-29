@@ -114,7 +114,6 @@
 		5210CFA314954C5300C525F3 /* StreamReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB74BB148D5548004FC55A /* StreamReader.m */; };
 		5210CFA414954CA800C525F3 /* LiveConnectSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 529DB6D2146C7550000973C1 /* LiveConnectSession.m */; };
 		52559D8C1506EA9000F0DF04 /* LiveSDKTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52559D8B1506EA9000F0DF04 /* LiveSDKTests-Info.plist */; };
-		52559D8D1506EA9C00F0DF04 /* LiveSDKTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52559D8B1506EA9000F0DF04 /* LiveSDKTests-Info.plist */; };
 		52559D901506EAAD00F0DF04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52559D8E1506EAAD00F0DF04 /* InfoPlist.strings */; };
 		52559D911506EC7100F0DF04 /* LiveAuthHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52559D6E1506EA7400F0DF04 /* LiveAuthHelperTests.m */; };
 		52559D921506EC7100F0DF04 /* LiveAuthStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52559D701506EA7400F0DF04 /* LiveAuthStorageTests.m */; };
@@ -168,7 +167,6 @@
 		5297DDF7145E102B005B463E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5297DDDD145E102B005B463E /* UIKit.framework */; };
 		5297DDF8145E102B005B463E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5297DDDF145E102B005B463E /* Foundation.framework */; };
 		5299273F14BE3A3F0075376C /* LiveSDK_framework-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5299273D14BE3A3F0075376C /* LiveSDK_framework-Info.plist */; };
-		5299274014BE3A510075376C /* LiveSDK_framework-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5299273D14BE3A3F0075376C /* LiveSDK_framework-Info.plist */; };
 		5299274314BE3A790075376C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5299274114BE3A790075376C /* InfoPlist.strings */; };
 		529AD7A4159D8CD3004A195B /* LiveUploadOverwriteOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 5297B269159A51F400ABFB6A /* LiveUploadOverwriteOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		529DB6DC146C7550000973C1 /* LiveConnectClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 529DB6D0146C7550000973C1 /* LiveConnectClient.m */; };
@@ -888,7 +886,7 @@
 		5297DDD0145E102B005B463E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					3740DE571897E45E009A40EE = {
 						TestTargetID = 5297DDD8145E102B005B463E;
@@ -945,13 +943,11 @@
 				52F76E96147A3FA500DA0A46 /* LiveAuthDialog_iPad.xib in Resources */,
 				52C474F51499E7F0007E646F /* backArrow_black.png in Resources */,
 				5299273F14BE3A3F0075376C /* LiveSDK_framework-Info.plist in Resources */,
-				5299274014BE3A510075376C /* LiveSDK_framework-Info.plist in Resources */,
 				5299274314BE3A790075376C /* InfoPlist.strings in Resources */,
 				52D8231F1506E81C000EF08F /* volvo_c70.jpg in Resources */,
 				52D823241506E836000EF08F /* LiveServiceViewController_iPad.xib in Resources */,
 				52D823291506E856000EF08F /* LiveServiceViewController_iPhone.xib in Resources */,
 				52559D8C1506EA9000F0DF04 /* LiveSDKTests-Info.plist in Resources */,
-				52559D8D1506EA9C00F0DF04 /* LiveSDKTests-Info.plist in Resources */,
 				52559D901506EAAD00F0DF04 /* InfoPlist.strings in Resources */,
 				526B94AE17692E5F000E29D2 /* Default-568h@2x.png in Resources */,
 			);
@@ -1198,7 +1194,6 @@
 		3740DE681897E45E009A40EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1235,7 +1230,6 @@
 		3740DE691897E45E009A40EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1268,7 +1262,6 @@
 		3740DE6A1897E45E009A40EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LiveSDKTestBed.app/LiveSDKTestBed";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1310,7 +1303,6 @@
 		3740DE6B1897E45E009A40EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LiveSDKTestBed.app/LiveSDKTestBed";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1362,7 +1354,6 @@
 		5285183814727FE7009E8BD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DEAD_CODE_STRIPPING = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1385,7 +1376,6 @@
 		5285183914727FE7009E8BD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1410,7 +1400,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1422,10 +1417,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1435,13 +1435,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -1521,6 +1530,7 @@
 				3740DE691897E45E009A40EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3740DE6D1897E45E009A40EE /* Build configuration list for PBXNativeTarget "LiveSDKlibTests" */ = {
 			isa = XCConfigurationList;
@@ -1529,6 +1539,7 @@
 				3740DE6B1897E45E009A40EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		528517A814723EDB009E8BD6 /* Build configuration list for PBXAggregateTarget "LiveSDKAggregate" */ = {
 			isa = XCConfigurationList;

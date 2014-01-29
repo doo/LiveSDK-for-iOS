@@ -413,30 +413,30 @@
                                         userState:userState];
 }
 
-- (LiveOperation *) copyFromPath:(NSString *)path
-                   toDestination:(NSString *)destination
-                        delegate:(id <LiveOperationDelegate>)delegate
+- (LiveOperation *) fileCopyFromPath:(NSString *)path
+                       toDestination:(NSString *)destination
+                            delegate:(id <LiveOperationDelegate>)delegate
 {
-    return [self copyFromPath:path toDestination:destination delegate:delegate userState:nil];
+    return [self fileCopyFromPath:path toDestination:destination delegate:delegate userState:nil];
 }
 
-- (LiveOperation *) copyFromPath:(NSString *)path
-                   toDestination:(NSString *)destination
-                        delegate:(id <LiveOperationDelegate>)delegate
-                       userState:(id)userState
+- (LiveOperation *) fileCopyFromPath:(NSString *)path
+                       toDestination:(NSString *)destination
+                            delegate:(id <LiveOperationDelegate>)delegate
+                           userState:(id)userState
 {
     [self validateInit];
     [self validatePath:path
             methodName:@"copyFromPath:toDestination:delegate:userState:"
               relative:YES];
-  
-    [self validateCopyMoveDestination:destination 
+    
+    [self validateCopyMoveDestination:destination
                            methodName:@"copyFromPath:toDestination:delegate:userState:"];
     
-    return [_liveClientCore sendRequestWithMethod:@"COPY" 
-                                             path:path 
+    return [_liveClientCore sendRequestWithMethod:@"COPY"
+                                             path:path
                                          jsonBody:[LiveApiHelper buildCopyMoveBody:destination]
-                                         delegate:delegate 
+                                         delegate:delegate
                                         userState:userState];
 }
 

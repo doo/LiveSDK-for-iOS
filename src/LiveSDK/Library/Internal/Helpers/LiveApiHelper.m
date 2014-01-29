@@ -79,7 +79,7 @@
     [[lowerPath substringToIndex:6] isEqualToString:@"/file."];
 }
 
-+ (void) parseApiResponse:(NSData *)data
++ (BOOL) parseApiResponse:(NSData *)data
              textResponse:(NSString **)textResponse
                  response:(NSDictionary **)response
                     error:(NSError **)error
@@ -88,8 +88,7 @@
     {
         *textResponse = @"";
         *response = [NSDictionary dictionary];
-        *error = nil;
-        return;
+        return YES;
     }
     
     *textResponse = [[[NSString alloc] initWithData:data
@@ -102,8 +101,14 @@
     NSDictionary *errorObj = [(*response) valueForKey:LIVE_ERROR_KEY_ERROR];
     if (errorObj != nil)
     {
-        *error = [LiveApiHelper createAPIError:errorObj];
+        if (error != nil) {
+            *error = [LiveApiHelper createAPIError:errorObj];
+            
+        }
+        return NO;
+        
     }
+    return YES;
 }
 
 + (NSString *) buildCopyMoveBody:(NSString *)destination
