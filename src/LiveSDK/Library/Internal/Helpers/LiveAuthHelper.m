@@ -19,8 +19,8 @@ NSString * LIVE_ENDPOINT_LOGIN_HOST = @"login.live.com";
 
 + (NSBundle *) getSDKBundle
 {
-    NSString *sdkPath = [[NSBundle mainBundle] pathForResource:@"LiveSDK"
-                                                        ofType:@"framework"];
+    NSString *sdkPath = [[NSBundle mainBundle] pathForResource:@"LiveSDKResources"
+                                                        ofType:@"bundle"];
     return (sdkPath)? [NSBundle bundleWithPath:sdkPath] : [NSBundle mainBundle];
 }
 
