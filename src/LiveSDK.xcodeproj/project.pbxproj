@@ -56,27 +56,27 @@
 		3740DEAB1897E742009A40EE /* LiveConnectionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C47500149B24F1007E646F /* LiveConnectionHelper.m */; };
 		3740DEAC1897E7BE009A40EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5297DDDD145E102B005B463E /* UIKit.framework */; };
 		3740DEAE1897E7FB009A40EE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740DEAD1897E7FB009A40EE /* QuartzCore.framework */; };
-		3740DEB01897E8E6009A40EE /* LiveAuthDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5210CF941494445B00C525F3 /* LiveAuthDialog.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEB11897E8E6009A40EE /* LiveAuthDialogDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6F1146C7B36000973C1 /* LiveAuthDialogDelegate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEB21897E8E6009A40EE /* LiveAuthRefreshRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B54AED14912DB6001E1E17 /* LiveAuthRefreshRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEB31897E8E6009A40EE /* LiveAuthStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B54AE414909F15001E1E17 /* LiveAuthStorage.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEB41897E8E6009A40EE /* LiveAuthRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB711146F5809000973C1 /* LiveAuthRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEB51897E8E6009A40EE /* LiveConnectClientCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6EE146C7AEE000973C1 /* LiveConnectClientCore.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEB61897E8E6009A40EE /* LiveConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6E7146C7645000973C1 /* LiveConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEB71897E8E6009A40EE /* LiveDownloadOperationCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B494511488BDF4001EA573 /* LiveDownloadOperationCore.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEB81897E8E6009A40EE /* LiveDownloadOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B4946B148B0FDF001EA573 /* LiveDownloadOperationInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEB91897E8E6009A40EE /* LiveOperationCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6EB146C7A39000973C1 /* LiveOperationCore.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEBA1897E8E6009A40EE /* LiveOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B4946C148B0FE0001EA573 /* LiveOperationInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEBB1897E8E6009A40EE /* LiveUploadOperationCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B4946D148B7D63001EA573 /* LiveUploadOperationCore.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEBC1897E8E6009A40EE /* JsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5285175A1471FFFD009E8BD6 /* JsonParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEBD1897E8E6009A40EE /* JsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5285175C1471FFFE009E8BD6 /* JsonWriter.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEBE1897E8E6009A40EE /* LiveApiHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 52F76E8F147A308500DA0A46 /* LiveApiHelper.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEBF1897E8E6009A40EE /* LiveAuthHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6FB146E36CA000973C1 /* LiveAuthHelper.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEC01897E8E6009A40EE /* StringHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6E1146C761C000973C1 /* StringHelper.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEC11897E8E6009A40EE /* UrlHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6E3146C761C000973C1 /* UrlHelper.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEC21897E8E6009A40EE /* StreamReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 52AB74BA148D5548004FC55A /* StreamReader.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEC31897E8E6009A40EE /* LiveConnectionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C474FF149B24F1007E646F /* LiveConnectionHelper.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3740DEC41897E8E6009A40EE /* LiveConnectionCreatorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C47502149B2E40007E646F /* LiveConnectionCreatorDelegate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3740DEB01897E8E6009A40EE /* LiveAuthDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5210CF941494445B00C525F3 /* LiveAuthDialog.h */; };
+		3740DEB11897E8E6009A40EE /* LiveAuthDialogDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6F1146C7B36000973C1 /* LiveAuthDialogDelegate.h */; };
+		3740DEB21897E8E6009A40EE /* LiveAuthRefreshRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B54AED14912DB6001E1E17 /* LiveAuthRefreshRequest.h */; };
+		3740DEB31897E8E6009A40EE /* LiveAuthStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B54AE414909F15001E1E17 /* LiveAuthStorage.h */; };
+		3740DEB41897E8E6009A40EE /* LiveAuthRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB711146F5809000973C1 /* LiveAuthRequest.h */; };
+		3740DEB51897E8E6009A40EE /* LiveConnectClientCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6EE146C7AEE000973C1 /* LiveConnectClientCore.h */; };
+		3740DEB61897E8E6009A40EE /* LiveConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6E7146C7645000973C1 /* LiveConstants.h */; };
+		3740DEB71897E8E6009A40EE /* LiveDownloadOperationCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B494511488BDF4001EA573 /* LiveDownloadOperationCore.h */; };
+		3740DEB81897E8E6009A40EE /* LiveDownloadOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B4946B148B0FDF001EA573 /* LiveDownloadOperationInternal.h */; };
+		3740DEB91897E8E6009A40EE /* LiveOperationCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6EB146C7A39000973C1 /* LiveOperationCore.h */; };
+		3740DEBA1897E8E6009A40EE /* LiveOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B4946C148B0FE0001EA573 /* LiveOperationInternal.h */; };
+		3740DEBB1897E8E6009A40EE /* LiveUploadOperationCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B4946D148B7D63001EA573 /* LiveUploadOperationCore.h */; };
+		3740DEBC1897E8E6009A40EE /* JsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5285175A1471FFFD009E8BD6 /* JsonParser.h */; };
+		3740DEBD1897E8E6009A40EE /* JsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5285175C1471FFFE009E8BD6 /* JsonWriter.h */; };
+		3740DEBE1897E8E6009A40EE /* LiveApiHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 52F76E8F147A308500DA0A46 /* LiveApiHelper.h */; };
+		3740DEBF1897E8E6009A40EE /* LiveAuthHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6FB146E36CA000973C1 /* LiveAuthHelper.h */; };
+		3740DEC01897E8E6009A40EE /* StringHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6E1146C761C000973C1 /* StringHelper.h */; };
+		3740DEC11897E8E6009A40EE /* UrlHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6E3146C761C000973C1 /* UrlHelper.h */; };
+		3740DEC21897E8E6009A40EE /* StreamReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 52AB74BA148D5548004FC55A /* StreamReader.h */; };
+		3740DEC31897E8E6009A40EE /* LiveConnectionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C474FF149B24F1007E646F /* LiveConnectionHelper.h */; };
+		3740DEC41897E8E6009A40EE /* LiveConnectionCreatorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C47502149B2E40007E646F /* LiveConnectionCreatorDelegate.h */; };
 		3740DEC51897E8E6009A40EE /* LiveAuthDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6CE146C7550000973C1 /* LiveAuthDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3740DEC61897E8E6009A40EE /* LiveConnectClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6CF146C7550000973C1 /* LiveConnectClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3740DEC71897E91D009A40EE /* LiveConnectSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB6D1146C7550000973C1 /* LiveConnectSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -712,11 +712,11 @@
 				3740DECA1897E91D009A40EE /* LiveDownloadOperationDelegate.h in Headers */,
 				3740DECB1897E91D009A40EE /* LiveOperation.h in Headers */,
 				3740DECC1897E91D009A40EE /* LiveOperationDelegate.h in Headers */,
-				3740DED31897EAEA009A40EE /* LiveSDKlib-Prefix.pch in Headers */,
 				3740DECD1897E91D009A40EE /* LiveOperationProgress.h in Headers */,
 				3740DECE1897E91D009A40EE /* LiveUploadOperationDelegate.h in Headers */,
 				3740DEC51897E8E6009A40EE /* LiveAuthDelegate.h in Headers */,
 				3740DECF1897E91D009A40EE /* LiveUploadOverwriteOption.h in Headers */,
+				3740DED31897EAEA009A40EE /* LiveSDKlib-Prefix.pch in Headers */,
 				3740DEB01897E8E6009A40EE /* LiveAuthDialog.h in Headers */,
 				3740DEB11897E8E6009A40EE /* LiveAuthDialogDelegate.h in Headers */,
 				3740DEB21897E8E6009A40EE /* LiveAuthRefreshRequest.h in Headers */,
@@ -937,7 +937,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Symlinkling ${TARGET_BUILD_DIR}/include/LiveSDKlib to ${BUILT_PRODUCTS_DIR}/LiveSDKlib\"\n\nln -fs \"${TARGET_BUILD_DIR}/include/LiveSDKlib\" \"${BUILT_PRODUCTS_DIR}/LiveSDKlib\"";
+			shellScript = "echo \"Symlinkling ${TARGET_BUILD_DIR}/include/LiveSDK to ${BUILT_PRODUCTS_DIR}/LiveSDK\"\n\nln -fs \"${TARGET_BUILD_DIR}/include/LiveSDK\" \"${BUILT_PRODUCTS_DIR}/LiveSDK\"";
 		};
 		528517AB14723FD5009E8BD6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
