@@ -1347,7 +1347,7 @@
 			};
 			name = Release;
 		};
-		37E70E8418AE5436000BE20A /* Pre-Release */ = {
+		37E70E8418AE5436000BE20A /* Inhouse */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1374,9 +1374,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = "Pre-Release";
+			name = Inhouse;
 		};
-		37E70E8518AE5436000BE20A /* Pre-Release */ = {
+		37E70E8518AE5436000BE20A /* Inhouse */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1389,9 +1389,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
-			name = "Pre-Release";
+			name = Inhouse;
 		};
-		37E70E8618AE5436000BE20A /* Pre-Release */ = {
+		37E70E8618AE5436000BE20A /* Inhouse */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1404,16 +1404,16 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
-			name = "Pre-Release";
+			name = Inhouse;
 		};
-		37E70E8718AE5436000BE20A /* Pre-Release */ = {
+		37E70E8718AE5436000BE20A /* Inhouse */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
-			name = "Pre-Release";
+			name = Inhouse;
 		};
-		37E70E8818AE5436000BE20A /* Pre-Release */ = {
+		37E70E8818AE5436000BE20A /* Inhouse */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1443,9 +1443,9 @@
 				PUBLIC_HEADERS_FOLDER_PATH = include/LiveSDK;
 				SKIP_INSTALL = YES;
 			};
-			name = "Pre-Release";
+			name = Inhouse;
 		};
-		37E70E8918AE5436000BE20A /* Pre-Release */ = {
+		37E70E8918AE5436000BE20A /* Inhouse */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LiveSDKTestBed.app/LiveSDKTestBed";
@@ -1480,9 +1480,9 @@
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
-			name = "Pre-Release";
+			name = Inhouse;
 		};
-		37E70E8A18AE5436000BE20A /* Pre-Release */ = {
+		37E70E8A18AE5436000BE20A /* Inhouse */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1505,7 +1505,7 @@
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = "Pre-Release";
+			name = Inhouse;
 		};
 		528517A914723EDB009E8BD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1653,7 +1653,7 @@
 			buildConfigurations = (
 				3705AEA818A4E76100FC1244 /* Debug */,
 				3705AEA918A4E76100FC1244 /* Release */,
-				37E70E8A18AE5436000BE20A /* Pre-Release */,
+				37E70E8A18AE5436000BE20A /* Inhouse */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1663,7 +1663,7 @@
 			buildConfigurations = (
 				3740DE681897E45E009A40EE /* Debug */,
 				3740DE691897E45E009A40EE /* Release */,
-				37E70E8818AE5436000BE20A /* Pre-Release */,
+				37E70E8818AE5436000BE20A /* Inhouse */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1673,7 +1673,7 @@
 			buildConfigurations = (
 				3740DE6A1897E45E009A40EE /* Debug */,
 				3740DE6B1897E45E009A40EE /* Release */,
-				37E70E8918AE5436000BE20A /* Pre-Release */,
+				37E70E8918AE5436000BE20A /* Inhouse */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1683,7 +1683,7 @@
 			buildConfigurations = (
 				528517A914723EDB009E8BD6 /* Debug */,
 				528517AA14723EDB009E8BD6 /* Release */,
-				37E70E8718AE5436000BE20A /* Pre-Release */,
+				37E70E8718AE5436000BE20A /* Inhouse */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1693,7 +1693,7 @@
 			buildConfigurations = (
 				5297DE04145E102B005B463E /* Debug */,
 				5297DE05145E102B005B463E /* Release */,
-				37E70E8418AE5436000BE20A /* Pre-Release */,
+				37E70E8418AE5436000BE20A /* Inhouse */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1703,7 +1703,7 @@
 			buildConfigurations = (
 				5297DE07145E102B005B463E /* Debug */,
 				5297DE08145E102B005B463E /* Release */,
-				37E70E8518AE5436000BE20A /* Pre-Release */,
+				37E70E8518AE5436000BE20A /* Inhouse */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1713,7 +1713,7 @@
 			buildConfigurations = (
 				5297DE0A145E102B005B463E /* Debug */,
 				5297DE0B145E102B005B463E /* Release */,
-				37E70E8618AE5436000BE20A /* Pre-Release */,
+				37E70E8618AE5436000BE20A /* Inhouse */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
