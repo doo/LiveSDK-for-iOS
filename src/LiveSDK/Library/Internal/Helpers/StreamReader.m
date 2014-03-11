@@ -68,7 +68,7 @@ const NSUInteger BUFFERSIZE = 4096;
             }
             
             uint8_t buf[BUFFERSIZE];
-            unsigned int len = 0;
+            NSInteger len = 0;
             len = [_stream read:buf maxLength:BUFFERSIZE];
             if(len) 
             {
