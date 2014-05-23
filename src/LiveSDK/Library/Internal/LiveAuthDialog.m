@@ -123,6 +123,10 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView 
 {
+    if (self.webView.scrollView.contentSize.width > self.webView.frame.size.width) {
+        CGPoint offset = CGPointMake(self.webView.frame.size.width/4.0, self.webView.scrollView.contentOffset.y);
+        [self.webView.scrollView setContentOffset:offset animated:YES];
+    }
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error 
