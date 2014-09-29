@@ -92,12 +92,6 @@
     return self;
 }
 
-- (void)dealloc
-{
-    [_liveClientCore release];
-    
-    [super dealloc];
-}
 
 #pragma mark Parameter validation
 

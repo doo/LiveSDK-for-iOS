@@ -33,8 +33,8 @@
                endUrl:(NSString *)endUrl
              delegate:(id<LiveAuthDialogDelegate>)delegate;
 
-@property (assign, nonatomic) id<LiveAuthDialogDelegate> delegate;
-@property (retain, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) id<LiveAuthDialogDelegate> delegate;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property (readonly, nonatomic) BOOL canDismiss;
 
 @end

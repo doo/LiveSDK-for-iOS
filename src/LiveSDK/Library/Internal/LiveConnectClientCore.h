@@ -43,10 +43,10 @@
 @property (nonatomic, readonly) NSArray *scopes;
 
 @property (nonatomic) LiveConnectSessionStatus status;
-@property (nonatomic, retain) LiveConnectSession *session;
+@property (nonatomic, strong) LiveConnectSession *session;
 
-@property (nonatomic, retain) LiveAuthRequest *authRequest;
-@property (nonatomic, retain) LiveAuthRefreshRequest *authRefreshRequest;
+@property (nonatomic, strong) LiveAuthRequest *authRequest;
+@property (nonatomic, strong) LiveAuthRefreshRequest *authRefreshRequest;
 @property (nonatomic, readonly) BOOL hasPendingUIRequest;
 
 - (id) initWithClientId:(NSString *)clientId

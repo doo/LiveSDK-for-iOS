@@ -48,9 +48,9 @@ currentViewController:(UIViewController *)currentViewController
     {
         _client = client;
         _scopes = [scopes copy];
-        _currentViewController = [currentViewController retain];
+        _currentViewController = currentViewController;
         _delegate = delegate;
-        _userState = [userState retain];
+        _userState = userState;
         _status = AuthNotStarted;
     }
     
@@ -61,19 +61,6 @@ currentViewController:(UIViewController *)currentViewController
 {    
     _authViewController.delegate = nil;
     [_tokenConnection cancel];
-    
-    [_scopes release];
-    [_userState release];
-    
-    [_authCode release];
-    [_session release];
-    [_error release];
-    [_currentViewController release];
-    [_authViewController release];
-    [_tokenConnection release];
-    [_tokenResponseData release];
-    
-    [super dealloc];
 }
 
 - (BOOL)isUserInvolved 
@@ -175,8 +162,7 @@ currentViewController:(UIViewController *)currentViewController
                                                          delegate:self];
     
     // Create a Navigation controller
-    UINavigationController *modalDialog = [[[UINavigationController alloc]initWithRootViewController:self.authViewController]
-                                          autorelease];
+    UINavigationController *modalDialog = [[UINavigationController alloc]initWithRootViewController:self.authViewController];
     modalDialog.modalPresentationStyle = UIModalPresentationFormSheet;
     [self.currentViewController presentViewController:modalDialog animated:YES completion:nil];
 }
@@ -286,7 +272,7 @@ didReceiveResponse:(NSURLResponse *)response
     }
     else
     {
-        self.tokenResponseData = [[[NSMutableData alloc] init] autorelease];
+        self.tokenResponseData = [[NSMutableData alloc] init];
     }
 }
 

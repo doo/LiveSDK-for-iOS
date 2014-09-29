@@ -108,10 +108,9 @@
             contentLength = [[self.httpResponse.allHeaderFields valueForKey:@"Content-Length"] intValue];
         }
         
-        LiveOperationProgress *progress = [[[LiveOperationProgress alloc] 
+        LiveOperationProgress *progress = [[LiveOperationProgress alloc] 
                                             initWithBytesTransferred:self.responseData.length 
-                                                          totalBytes:contentLength]
-                                           autorelease];
+                                                          totalBytes:contentLength];
         
         [self.delegate liveDownloadOperationProgressed:progress 
                                                   data:data 
