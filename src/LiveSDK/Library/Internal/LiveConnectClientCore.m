@@ -58,15 +58,6 @@
 - (void)dealloc
 {
     [authRefreshRequest cancel];
-    
-    [_clientId release];
-    [_scopes release];
-    [_session release];
-    [_authRequest release];
-    [_storage release];
-    [authRefreshRequest release];
-    
-    [super dealloc];
 }
 
 #pragma mark Auth methods
@@ -84,12 +75,11 @@
         return;
     }
     
-    LiveAuthRequest *authRequest = [[[LiveAuthRequest alloc] initWithClient:self 
+    LiveAuthRequest *authRequest = [[LiveAuthRequest alloc] initWithClient:self 
                                                                     scopes:scopes 
                                                      currentViewController:currentViewController 
                                                                   delegate:delegate 
-                                                                 userState:userState]
-                                    autorelease];
+                                                                 userState:userState];
     
     self.authRequest = authRequest;
     
@@ -126,8 +116,7 @@
 
 - (void) setSession:(LiveConnectSession *)session
 {
-    [_session release];
-    _session = [session retain];
+    _session = session;
     
     if (_session == nil)
     {
@@ -148,13 +137,12 @@
     if ([LiveAuthHelper shouldRefreshToken:_session 
                               refreshToken:_storage.refreshToken]) 
     {
-        authRefreshRequest = [[[LiveAuthRefreshRequest alloc] initWithClientId:_clientId
+        authRefreshRequest = [[LiveAuthRefreshRequest alloc] initWithClientId:_clientId
                                                                          scope:_scopes
                                                                   refreshToken:_storage.refreshToken
                                                                       delegate:delegate
                                                                      userState:userState
-                                                                    clientStub:self]
-                              autorelease];
+                                                                    clientStub:self];
         
         [authRefreshRequest execute];
     }
@@ -179,30 +167,28 @@
                                 userState:(id) userState
 {
     NSData *bodyData = [jsonBody dataUsingEncoding:NSUTF8StringEncoding];
-    LiveOperationCore *operation = [[[LiveOperationCore alloc] initWithMethod:method 
+    LiveOperationCore *operation = [[LiveOperationCore alloc] initWithMethod:method 
                                                                          path:path 
                                                                   requestBody:bodyData 
                                                                      delegate:delegate 
                                                                     userState:userState 
-                                                                   liveClient:self] 
-                                    autorelease];
+                                                                   liveClient:self];
     [operation execute];  
     
-    return [[[LiveOperation alloc] initWithOpCore:operation] autorelease];
+    return [[LiveOperation alloc] initWithOpCore:operation];
 }
 
 - (LiveDownloadOperation *) downloadFromPath:(NSString *)path
                                     delegate:(id <LiveDownloadOperationDelegate>)delegate
                                    userState:(id)userState
 {
-    LiveDownloadOperationCore *operation = [[[LiveDownloadOperationCore alloc] initWithPath:path 
+    LiveDownloadOperationCore *operation = [[LiveDownloadOperationCore alloc] initWithPath:path 
                                                                                    delegate:delegate
                                                                                   userState:userState 
-                                                                                 liveClient:self]
-                                            autorelease];
+                                                                                 liveClient:self];
     [operation execute];
     
-    return [[[LiveDownloadOperation alloc] initWithOpCore:operation] autorelease];
+    return [[LiveDownloadOperation alloc] initWithOpCore:operation];
 }
 
 - (LiveOperation *) uploadToPath:(NSString *)path
@@ -212,18 +198,17 @@
                         delegate:(id <LiveUploadOperationDelegate>)delegate
                        userState:(id)userState
 {
-    LiveUploadOperationCore *operation = [[[LiveUploadOperationCore alloc] initWithPath:path
+    LiveUploadOperationCore *operation = [[LiveUploadOperationCore alloc] initWithPath:path
                                                                                fileName:fileName
                                                                                    data:data
                                                                               overwrite:overwrite
                                                                                delegate:delegate
                                                                               userState:userState
-                                                                             liveClient:self] 
-                                          autorelease];
+                                                                             liveClient:self];
     
     [operation execute];
     
-    return [[[LiveOperation alloc] initWithOpCore:operation] autorelease];
+    return [[LiveOperation alloc] initWithOpCore:operation];
 }
 
 - (LiveOperation *) uploadToPath:(NSString *)path
@@ -233,17 +218,16 @@
                         delegate:(id <LiveUploadOperationDelegate>)delegate
                        userState:(id)userState
 {
-    LiveUploadOperationCore *operation = [[[LiveUploadOperationCore alloc] initWithPath:path
+    LiveUploadOperationCore *operation = [[LiveUploadOperationCore alloc] initWithPath:path
                                                                                fileName:fileName
                                                                             inputStream:inputStream
                                                                               overwrite:overwrite
                                                                                delegate:delegate
                                                                               userState:userState
-                                                                             liveClient:self]
-                                          autorelease];
+                                                                             liveClient:self];
     [operation execute];
     
-    return [[[LiveOperation alloc] initWithOpCore:operation] autorelease];
+    return [[LiveOperation alloc] initWithOpCore:operation];
 }
 
 @end

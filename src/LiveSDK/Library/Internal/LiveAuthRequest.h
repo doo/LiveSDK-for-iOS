@@ -51,14 +51,14 @@ typedef enum
 } 
 
 @property (nonatomic, readonly) BOOL isUserInvolved;
-@property (nonatomic, retain) NSString *authCode;
-@property (nonatomic, retain) LiveConnectSession *session;
-@property (nonatomic, retain) UIViewController *currentViewController;
-@property (nonatomic, retain) LiveAuthDialog *authViewController;
+@property (nonatomic, strong) NSString *authCode;
+@property (nonatomic, strong) LiveConnectSession *session;
+@property (nonatomic, strong) UIViewController *currentViewController;
+@property (nonatomic, strong) LiveAuthDialog *authViewController;
 @property (nonatomic) LiveAuthRequstStatus status;
-@property (nonatomic, retain) NSError *error;
-@property (nonatomic, retain) id tokenConnection;
-@property (nonatomic, retain) NSMutableData *tokenResponseData;
+@property (nonatomic, strong) NSError *error;
+@property (nonatomic, strong) id tokenConnection;
+@property (nonatomic, strong) NSMutableData *tokenResponseData;
 
 - (id) initWithClient:(LiveConnectClientCore *)client
                scopes:(NSArray *)scopes

@@ -34,11 +34,5 @@
     return self.liveOpCore.responseData;
 }
 
-- (void)dealloc 
-{
-    [data release];
-    
-    [super dealloc];
-}
 
 @end

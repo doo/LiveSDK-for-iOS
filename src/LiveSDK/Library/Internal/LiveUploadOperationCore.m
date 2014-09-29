@@ -72,14 +72,6 @@
     return self;
 }
 
-- (void)dealloc
-{
-    [_fileName release];
-    [_queryUploadLocationOp release];
-    [_uploadPath release];
-    
-    [super dealloc];
-}
 
 #pragma mark override methods
 
@@ -131,9 +123,8 @@
  totalBytesWritten:(NSInteger)totalBytesWritten 
 totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
 {
-    LiveOperationProgress *progress = [[[LiveOperationProgress alloc] initWithBytesTransferred:totalBytesWritten
-                                                                                    totalBytes:totalBytesExpectedToWrite]
-                                       autorelease];
+    LiveOperationProgress *progress = [[LiveOperationProgress alloc] initWithBytesTransferred:totalBytesWritten
+                                                                                    totalBytes:totalBytesExpectedToWrite];
     
     if ([self.delegate respondsToSelector:@selector(liveUploadOperationProgressed:operation:)]) 
     {
@@ -151,23 +142,22 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
     
     if ([UrlHelper isFullUrl:self.path]) 
     {
-        _uploadPath = [self.path retain];
+        _uploadPath = self.path;
         [self sendRequest];
     }
     else
     {
-        _queryUploadLocationOp = [[self.liveClient sendRequestWithMethod:@"GET" 
+        _queryUploadLocationOp = [self.liveClient sendRequestWithMethod:@"GET" 
                                                                     path:self.path 
                                                                 jsonBody:nil 
                                                                 delegate:self 
-                                                               userState:@"QUERY_UPLOAD_LOCATION"] 
-                                  retain];
+                                                               userState:@"QUERY_UPLOAD_LOCATION"];
     };
 }
 
 - (void)liveOperationSucceeded:(LiveOperation *)operation
 {
-    _uploadPath = [[operation.result valueForKey:@"upload_location"] retain];
+    _uploadPath = [operation.result valueForKey:@"upload_location"];
     
     if ([StringHelper isNullOrEmpty:_uploadPath])
     {

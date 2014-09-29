@@ -33,20 +33,13 @@ const NSUInteger BUFFERSIZE = 4096;
     self = [super init];
     if (self) 
     {
-        _stream = [stream retain];
+        _stream = stream;
         _delegate = delegate;
     }
     
     return self;
 }
 
-- (void)dealloc
-{
-    [_stream release];
-    [data release];
-    
-    [super dealloc];
-}
 
 - (void)start
 {

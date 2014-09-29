@@ -36,7 +36,7 @@
 @interface LiveConnectClient : NSObject 
 
 // The user's current session object.
-@property(nonatomic, readonly) LiveConnectSession *session;
+@property(weak, nonatomic, readonly) LiveConnectSession *session;
 
 #pragma mark - init* methods
 

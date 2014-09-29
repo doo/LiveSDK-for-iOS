@@ -29,7 +29,7 @@
     NSString *_clientId;
 }
 
-@property (nonatomic, retain) NSString *refreshToken;
+@property (nonatomic, strong) NSString *refreshToken;
 
 - (id) initWithClientId:(NSString *)clientId;
 

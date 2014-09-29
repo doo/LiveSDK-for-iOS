@@ -61,14 +61,6 @@
 // ------------------------------------------------------------------------
 
 @interface MSJSONParser : NSObject
-{
-	NSScanner                      *_scanner;
-	NSError                        *_error;
-	BOOL                            _skipJavascriptComments;
-	BOOL                            _supportJSONLight;
-	Class                           _collectionClass;
-	Class                           _objectClass;
-}
 
 + (id) parseText:(NSString*)text error:(NSError**)error;
 + (id) parseJSONLightText:(NSString*)text error:(NSError**)error;
@@ -76,11 +68,11 @@
 - (id) initWithText:(NSString*)text;
 - (id) parse;
 
-@property (readwrite, retain) NSError *error;
+@property (readwrite, strong) NSError *error;
 @property (readwrite, assign) BOOL skipJavascriptComments;
 @property (readwrite, assign) BOOL supportJSONLight;
-@property (readwrite, retain) Class collectionClass;       // NSMutableArray by default
-@property (readwrite, retain) Class objectClass;           // NSMutableDictionary by default
+@property (readwrite, strong) Class collectionClass;       // NSMutableArray by default
+@property (readwrite, strong) Class objectClass;           // NSMutableDictionary by default
 
 - (NSString*) memberNameForString:(NSString*)name;   // returns 'name' by default
 - (id) valueForStringValue:(NSString*)value;         // returns 'value' by default
