@@ -195,8 +195,11 @@ NSString * const MSJSONWriterCycleException = @"MSJSONWriterCycleException";
 	}
 	else if (_memberKeysSelector && [value respondsToSelector:_memberKeysSelector])
 	{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 		id schema = [value performSelector:_memberKeysSelector];
 		[self appendObject:value withMemberInfo:schema];
+#pragma clang diagnostic pop
 	}
 	else if ([value respondsToSelector:@selector(JSONMemberKeys)])
 	{
